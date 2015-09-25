@@ -26,6 +26,7 @@ class MinimumSpanningTree{
 				Edge e = (Edge)itr.next();  
 				System.out.println(e.u + " " + e.v + " " + e.wt);  
 			} 
+			bfs(edges)
 		}
 	}
 }
