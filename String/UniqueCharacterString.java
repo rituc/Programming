@@ -1,5 +1,4 @@
 import java.util.*;
-import java.lang.*;
 
 class UniqueCharacterString{
 
@@ -23,17 +22,27 @@ class UniqueCharacterString{
 	public static void main(String args[]){
 		Scanner in = new Scanner(System.in);
 		int T;
-		String s = " ";
-		boolean uniqChar = true;
+		String s;
+		boolean uniqChar;
 		T = in.nextInt();
 
 		for(int t=0; t<T; t++){
-			s = in.next();	
-			if(isUniqueChar(s))
+			uniqChar = true;
+			s = in.next();
+			int count[] = new int[26];
+			for(int i = 0; i < s.length(); i++){
+				count[s.charAt(i)-'a']++;
+			}
+			for(int i=0; i<26; i++){
+				if(count[i] > 1){
+					uniqChar = false;
+				}
+			}
+			/*if(isUniqueChar(s))
 				System.out.println("String contains unique characters");
 			else
-				System.out.println("String doesnot contains unique characters");
-			System.out.println();
+				System.out.println("String does not contains unique characters");*/
+			System.out.println(uniqChar);
 		}
 	}
 }
