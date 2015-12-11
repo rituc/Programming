@@ -4,7 +4,6 @@ class BSTNode{
 	int key;
 	BSTNode left;
 	BSTNode right;
-	//BSTNode parent;
 
 	BSTNode(int item){
 		key = item;
