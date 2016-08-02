@@ -2,8 +2,6 @@ import java.util.*;
 
 class MaxHeap{
 
-
-
 	public static void main(String agrs[]){
 		int T, N;
 		Scanner in = new Scanner(System.in);
