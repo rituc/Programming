@@ -9,7 +9,6 @@ def main():
 		for i in range(n):
 			a.append(int(input()))
 		# print find_majority_elm(a, n)
-
 		print is_majority(a, n, get_majority_candidate(a, n))
 
 def check_majority_elm(a, n):
