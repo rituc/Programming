@@ -30,7 +30,6 @@ def merge_array(nplusm, a, n, m):
 
 
 def shift_array_elem(a, n, m):
-	print "last array element initial", a[n+m-1]
 	j = n+m-1
 	for i in range(n+m-1, 0, -1):
 		if(a[i] != -1):
