@@ -1,7 +1,8 @@
 def main():
 	print "Enter number"
 	num = long(input())
-	print count_set_bits(num)
+	# print count_set_bits(num)
+	print count_ones(num)
 	# print "Even" if find_parity(num) == 0 else "Odd"
 	# test()
 
@@ -16,6 +17,13 @@ def count_set_bits(num):
 			set_count +=1
 		num = num >> 1
 	return set_count
+
+def count_ones(num):
+	count = 0
+	while num > 0:
+		num = num & (num-1)
+		count += 1
+	return count
 
 
 def test():
