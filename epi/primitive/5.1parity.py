@@ -14,7 +14,7 @@ def count_set_bits(num):
 	set_count = 0
 	while num > 0:
 		if(num & 1 == 1):
-			set_count +=1
+			set_count += 1
 		num = num >> 1
 	return set_count
 
