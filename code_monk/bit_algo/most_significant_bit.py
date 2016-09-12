@@ -4,7 +4,6 @@ def main():
   print largest_power(N)
 
 def largest_power(N):
-  # changing all right side bits to 1.
   N = N| (N>>1)
   N = N| (N>>2)
   N = N| (N>>4)

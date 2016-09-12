@@ -1,5 +1,4 @@
 # https://www.hackerearth.com/code-monk-bit-manipulation/algorithm/monks-choice-of-numbers-1/editorial/
-
 def main():
 	T = int(raw_input("Enter number of test cases: "))
 	for t in range(T):
