@@ -14,7 +14,7 @@ class KthLastNode{
 		}
 		head = node
 	}
-	static KthLastNode finfkthLastNode(head, int k){
+	static KthLastNode findkthLastNode(head, int k){
 		if(head == null)
 			return null;
 		KthLastNode runner = head;
@@ -43,7 +43,7 @@ class KthLastNode{
 			data = in.nextInt();
 			add(head, data);
 		}
-		kthLastNode = finfkthLastNode(head, k);
+		kthLastNode = findkthLastNode(head, k);
 		System.out.println(kthLastNode.data);
 	}
 }
